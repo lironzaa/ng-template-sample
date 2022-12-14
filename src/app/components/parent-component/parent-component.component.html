@@ -1,0 +1,24 @@
+<div [ngSwitch]="course">
+  <ng-template [ngSwitchCase]="'Angular'">
+    <app-angular-template></app-angular-template>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'TypeScript'">
+    <app-typescript-template></app-typescript-template>
+  </ng-template>
+  <ng-template [ngSwitchCase]="'JavaScript'">
+    <p>JavaScript Course</p>
+  </ng-template>
+  <ng-template ngSwitchDefault>
+    <p>HTML Course</p>
+  </ng-template>
+</div>
+
+<!--<ng-container-->
+<!--  *ngTemplateOutlet="angularTemplate">-->
+<!--</ng-container>-->
+
+<!--<ng-container-->
+<!--  *ngTemplateOutlet="selectedTemplate">-->
+<!--</ng-container>-->
+
+<app-child-component [dynamicTemplate]="selectedTemplate"></app-child-component>
