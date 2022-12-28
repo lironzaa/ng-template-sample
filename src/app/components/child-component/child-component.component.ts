@@ -1,7 +1,5 @@
 import {
-  AfterContentChecked,
   AfterViewInit,
-  ChangeDetectorRef,
   Component,
   Input,
   OnInit,
@@ -17,10 +15,8 @@ export class ChildComponentComponent implements OnInit, AfterViewInit {
   @Input() dynamicTemplate!: TemplateRef<any>;
 
   ngOnInit() {
-    console.log(this.dynamicTemplate);
   }
 
   ngAfterViewInit() {
-    console.log(this.dynamicTemplate);
   }
 }

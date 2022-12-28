@@ -7,6 +7,9 @@ import { ParentComponentComponent } from './components/parent-component/parent-c
 import { ChildComponentComponent } from './components/child-component/child-component.component';
 import { AngularTemplateComponent } from './components/templates/angular-template/angular-template.component';
 import { TypescriptTemplateComponent } from './components/templates/typescript-template/typescript-template.component';
+import { ModalComponent } from './components/modal/modal.component';
+import { InfoComponent } from './components/info/info.component';
+import { ChildModalComponent } from './components/child-modal/child-modal.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { TypescriptTemplateComponent } from './components/templates/typescript-t
     ParentComponentComponent,
     ChildComponentComponent,
     AngularTemplateComponent,
-    TypescriptTemplateComponent
+    TypescriptTemplateComponent,
+    ModalComponent,
+    InfoComponent,
+    ChildModalComponent
   ],
   imports: [
     BrowserModule,

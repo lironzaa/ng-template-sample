@@ -22,3 +22,19 @@
 <!--</ng-container>-->
 
 <app-child-component [dynamicTemplate]="selectedTemplate"></app-child-component>
+
+<app-modal>
+  <div header>
+    <p>
+      Cool header
+    </p>
+  </div>
+  <div question>
+    <p>Let's learn about content projection!</p>
+  </div>
+  <div extra>
+<!--    <p>Let's learn about content projection!</p>-->
+<!--    <app-child-component [dynamicTemplate]="selectedTemplate"></app-child-component>-->
+    <app-info></app-info>
+  </div>
+</app-modal>

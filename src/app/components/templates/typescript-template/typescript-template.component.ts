@@ -10,11 +10,9 @@ export class TypescriptTemplateComponent implements OnInit, AfterViewInit  {
 
 
   ngOnInit() {
-    console.log(this.typescriptTemplate);
   }
 
   ngAfterViewInit() {
-    console.log(this.typescriptTemplate);
   }
 
 }

@@ -24,7 +24,6 @@ export class ParentComponentComponent implements OnInit, AfterViewInit {
   @ViewChild(TypescriptTemplateComponent) typescriptTemplateComponent!: TypescriptTemplateComponent;
 
   ngOnInit() {
-    console.log(this.angularTemplateComponent);
     // console.log(this.selectedTemplate);
     // this.templatesList = [
     //   this.angularTemplate,
@@ -37,9 +36,6 @@ export class ParentComponentComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    console.log(this.angularTemplateComponent || this.typescriptTemplateComponent);
-    console.log(this.angularTemplateComponent);
-    console.log(this.typescriptTemplateComponent);
-    this.selectedTemplate = this.angularTemplateComponent || this.typescriptTemplateComponent;
+    // this.selectedTemplate = this.angularTemplateComponent || this.typescriptTemplateComponent;
   }
 }

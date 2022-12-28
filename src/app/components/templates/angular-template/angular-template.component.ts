@@ -9,10 +9,8 @@ export class AngularTemplateComponent implements OnInit, AfterViewInit {
   @ViewChild('angularTemplate') angularTemplate!: TemplateRef<any>;
 
   ngOnInit() {
-    console.log(this.angularTemplate);
   }
 
   ngAfterViewInit() {
-    console.log(this.angularTemplate);
   }
 }
